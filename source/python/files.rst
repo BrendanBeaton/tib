@@ -132,7 +132,7 @@ For instance, the *GFF* format (Generic File Format) is a file format commonly e
 
 According to the format specification, these fields are tab (``'\t'``) delimited. To generate such output we need to store the field values in a series object (such as a list). This allows us to then use the string ``join()`` method to produce a single string with all field elements.
 
-.. note:: Writing comma delimited files is done in the same way. Just replace ``'\'.join`` with ``','.join``.
+.. note:: Writing comma delimited files is done in the same way. Just replace ``'\t'.join`` with ``','.join``.
 
 Exercises
 =========
@@ -167,7 +167,7 @@ Exercises
         ],
     ]
 
-**2.** On linux and MacOS, the ``\n`` character is used to denote line endings. Windows uses ``\r\l``. Using ``help(open)``. Figure out how you would specify a file is written using line endings that differ to your operating system. Then do that for the data above.
+**2.** On linux and MacOS, the ``\n`` character is used to denote line endings. Windows uses ``\r\n``. Using ``help(open)``. Figure out how you would specify a file is written using line endings that differ to your operating system. Then do that for the data above.
 
 **3.** How you can check the line-endings of a file using Python. Is their another tool for your operating system?
 
